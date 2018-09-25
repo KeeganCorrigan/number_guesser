@@ -1,0 +1,112 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+}
+
+input, select, textarea, button {
+  font-family:inherit;
+  font-size: inherit;
+}
+
+header {
+  background-color: #404041;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 67px;
+  color: #ED458B;
+}
+
+h1 .last-heading-word {
+  font-weight: 300;
+  color: #E6E7E8;
+}
+
+.guessSubmit, .reset, .clear, .minMaxSubmit {
+  color: #FFFFFF;
+  background-color: #929497;
+  border: none;
+  padding: 3px 40px 3px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+input {
+  width: 40%;
+  border: 1px solid #D0D2D3;
+  padding: 3px 0px 3px 8px;
+}
+
+input::placeholder {
+  color: #D0D2D3;
+}
+
+.button-container {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0px 30px 0px;
+}
+
+.guessSubmit, .clear {
+  width: 45%;
+}
+
+.reset {
+  width: 40%;
+  font-size: 20px;
+}
+
+main, form {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+main {
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.guessAmount {
+  color: #EB008B;
+  font-size: 200px;
+  font-weight: 300;
+  line-height: .7;
+  margin: 0px;
+  padding: 0px;
+}
+
+.maxMinSetContainer {
+  width: 40%;
+}
+
+.minNumberField, .maxNumberField {
+  margin: 10px;
+  width: 100%;
+}
+
+.minMaxSubmit {
+  width: 100%;
+}
+
+h5 {
+  border-top: 5px solid #EB008B;
+}

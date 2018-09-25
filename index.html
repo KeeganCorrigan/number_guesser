@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1> Number <span class="last-heading-word">Guesser</span></h1>
+    </header>
+
+    <main>
+      <form onsubmit="return false;" id="myForm">
+        <input type="text" id="guessField" class="guessField" placeholder="Enter Your Guess" onkeyup="clearToggle()" onclick="clearToggle()">
+        <div class="button-container">
+          <input type="submit" value="Guess" class="guessSubmit" id="guessSubmit">
+          <button onclick="clearGuessField()" id="clear" class="clear">Clear</button>
+        </div>
+      </form>
+
+      <div id="resetGame" class="resetgame">
+        <p class="invalidGuess" id="invalidGuess"></p>
+        <p class="lastGuess" id="lastGuess"></p>
+        <p class="guessAmount" id="guessAmount"></p>
+        <p class="guessChecker" id="guessChecker"></p>
+        <p class="winStateUpdate" id="winStateUpdate"></p>
+      </div>
+
+      <button id="reset" class="reset">Reset</button>
+
+      <h5> You can generate a new random number to guess below by setting a minimum and maximum range</h5>
+
+      <div class="maxMinSetContainer">
+        <form onsubmit="return false;" id="minMaxForm">
+          <input type="number" id="minNumberField" class="minNumberField" placeholder="Set minimum range">
+          <input type="number" id="maxNumberField" class="maxNumberField" placeholder="Set maximum range">
+          <input type="submit" value="Generate Number" class="minMaxSubmit" id="minMaxSubmit">
+        </form>
+      </div>
+
+    </main>
+
+    <script src = "script.js"></script>
+
+  </body>
+</html>
